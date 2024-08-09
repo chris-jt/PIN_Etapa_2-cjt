@@ -21,7 +21,7 @@ jobs:
     - name: Deploy to AWS CloudFormation
       run: |
         aws cloudformation deploy \
-          --template-file sandbox-infra.yml \
+          --template-file ./sandbox-infra.yml \
           --stack-name sandbox-stack \
           --capabilities CAPABILITY_IAM \
           --no-fail-on-empty-changeset
