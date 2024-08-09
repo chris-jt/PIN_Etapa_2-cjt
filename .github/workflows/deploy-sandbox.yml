@@ -24,7 +24,7 @@ jobs:
     - name: Deploy to AWS CloudFormation
       run: |
         aws cloudformation deploy \
-          --template-file /PIN_Etapa_2-cjt/sandbox-infra.yml \
+          --template-file PIN_Etapa_2-cjt/PIN_Etapa_2-cjt/sandbox-infra.yml \
           --stack-name sandbox-stack \
           --capabilities CAPABILITY_IAM \
           --no-fail-on-empty-changeset
