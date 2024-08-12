@@ -18,10 +18,10 @@ Resources:
     Properties:
       VpcId: '!Ref SandboxVPC'
       AvailabilityZone: 
-      'Fn::Select': 
-        - 0
-        - 'Fn::GetAZs': 
-            'Ref': 'AWS::Region'
+        'Fn::Select': 
+          - 0
+          - 'Fn::GetAZs': 
+              'Ref': 'AWS::Region'
       CidrBlock: 10.0.1.0/24
       MapPublicIpOnLaunch: true
       Tags:
@@ -33,10 +33,10 @@ Resources:
     Properties:
       VpcId: '!Ref SandboxVPC'
       AvailabilityZone: 
-      'Fn::Select': 
-        - 0
-        - 'Fn::GetAZs': 
-            'Ref': 'AWS::Region'
+        'Fn::Select': 
+          - 0
+          - 'Fn::GetAZs': 
+              'Ref': 'AWS::Region'
       CidrBlock: 10.0.2.0/24
       MapPublicIpOnLaunch: true
       Tags:
