@@ -80,7 +80,7 @@ Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub 'my-s3-bucket-${AWS::AccountId}-${RandomString}'
+      BucketName: !Sub 'my-s3-bucket-${AWS::AccountId}'
 
   DynamoDBTable:
     Type: AWS::DynamoDB::Table
