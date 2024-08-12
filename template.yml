@@ -61,7 +61,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      ImageId: ami-0ae8f15ae66fe8cda # Amazon Debian AMI
+      ImageId: ami-00402f0bdf4996822 # Amazon Debian AMI
       SubnetId: !Ref PublicSubnet
       Tags:
         - Key: Name
@@ -71,7 +71,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      ImageId: ami-0ae8f15ae66fe8cda # Amazon Debian AMI
+      ImageId: ami-00402f0bdf4996822 # Amazon Debian AMI
       SubnetId: !Ref PublicSubnet
       Tags:
         - Key: Name
